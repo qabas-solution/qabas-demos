@@ -1,4 +1,23 @@
+@import 'tailwindcss';
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap");
+@custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
+
+@theme inline {
+  --color-bg: var(--q-bg);
+  --color-surface: var(--q-surface);
+  --color-surface-soft: var(--q-surface-soft);
+  --color-ink: var(--q-ink);
+  --color-ink-muted: var(--q-ink-muted);
+  --color-line: var(--q-border);
+  --color-primary: var(--q-primary);
+  --color-purple: var(--q-purple);
+  --color-flame: var(--q-flame);
+  --color-amber: var(--q-amber);
+  --color-coral: var(--q-coral);
+  --color-gold: var(--q-gold);
+  --radius-card: 20px;
+  --radius-hero: 32px;
+}
 
 * {
   margin: 0;

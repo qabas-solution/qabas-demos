@@ -1,0 +1,18 @@
+@use 'abstracts/mixins' as *;
+
+.card {
+  border: 1px solid var(--q-border);
+  box-shadow: 0 12px 32px rgb(42 58 140 / 12%);
+}
+
+.button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: 0;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #2a3a8c, #6e2c8b, #e07a4f, #fbb03b);
+  color: #fff;
+  cursor: pointer;
+  @include focus-ring;
+}
+

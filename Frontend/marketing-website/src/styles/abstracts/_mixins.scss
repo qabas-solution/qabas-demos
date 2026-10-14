@@ -1,0 +1,26 @@
+@use 'variables' as *;
+
+@mixin respond($bp) {
+  @media (min-width: $bp) {
+    @content;
+  }
+}
+
+@mixin dark {
+  [data-theme='dark'] & {
+    @content;
+  }
+}
+
+@mixin reduced-motion {
+  @media (prefers-reduced-motion: reduce) {
+    @content;
+  }
+}
+
+@mixin focus-ring {
+  &:focus-visible {
+    outline: 3px solid var(--q-amber);
+    outline-offset: 3px;
+  }
+}
