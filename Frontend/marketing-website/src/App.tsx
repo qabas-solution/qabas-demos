@@ -1,10 +1,11 @@
+import { RouterProvider } from "react-router-dom";
+import { AppProviders } from "@/app/providers";
+import { router } from "@/app/routes";
+
 export default function App() {
   return (
-    <section className="flex min-h-screen items-center justify-center bg-bg p-6 text-ink">
-      <section className="text-center">
-        <h1 className="text-4xl font-bold">QABAS</h1>
-        <p className="mt-4 text-ink-muted">Arabic Braille Solutions</p>
-      </section>
-    </section>
+    <AppProviders>
+      <RouterProvider router={router} />
+    </AppProviders>
   );
 }
