@@ -1,5 +1,6 @@
-import { PagePlaceholder } from "./page-placeholder";
+import { HomeHero, HomeSections } from "@/features/home/components";
+import { getHomeContent } from "@/features/home/services";
 
 export default function HomePage() {
-  return <PagePlaceholder page="home" />;
+  return <main><HomeHero /><HomeSections content={getHomeContent()} /></main>;
 }
