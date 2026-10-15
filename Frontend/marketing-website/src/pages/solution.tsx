@@ -1,5 +1,5 @@
-import { PagePlaceholder } from "./page-placeholder";
+import { getSolutionContent, SolutionPageContent } from "@/features/solution";
 
 export default function SolutionPage() {
-  return <PagePlaceholder page="solution" />;
+  return <SolutionPageContent content={getSolutionContent()} />;
 }

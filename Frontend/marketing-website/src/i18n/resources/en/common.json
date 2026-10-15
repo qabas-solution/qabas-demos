@@ -48,6 +48,26 @@
     "storyDescription": "Every evening, Layan and her mother manually transcribe Braille worksheets. Her ability is not the barrier—the missing bridge to her classroom content is.",
     "storyQuote": "We want more time for learning, and less time spent transcribing."
   },
+  "solutionContent": {
+    "eyebrow": "The solution",
+    "heroTitle": "QABAS connects dots to words",
+    "heroDescription": "An Arabic-first platform that turns Braille patterns into clear text through a fast, warm, inclusive experience.",
+    "tryNow": "Try it now",
+    "demoTitle": "Interactive demo",
+    "demoHint": "Tap the dots",
+    "inputLabel": "Braille input",
+    "outputLabel": "Arabic output",
+    "dot": "Dot",
+    "confidence": "Translation confidence",
+    "listen": "Listen",
+    "copy": "Copy",
+    "beginner": "Easy for beginners",
+    "accessible": "Built for accessibility",
+    "comparisonEyebrow": "A clearer way",
+    "comparisonTitle": "QABAS vs. traditional methods",
+    "capability": "Capability",
+    "traditional": "Traditional"
+  },
   "pageComingSoon": "This page is being built.",
   "nav": {
     "about": "About",
