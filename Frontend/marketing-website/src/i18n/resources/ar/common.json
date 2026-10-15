@@ -4,6 +4,35 @@
   "language": "English",
   "theme": "المظهر",
   "liteMode": "حركة خفيفة",
+  "toggleTheme": "تبديل المظهر",
+  "toggleLiteMode": "تبديل الحركة الخفيفة",
+  "toggleMenu": "فتح القائمة",
+  "switchLanguage": "التبديل إلى الإنجليزية",
+  "mainNavigation": "التنقل الرئيسي",
   "home": "الرئيسية",
-  "pageComingSoon": "هذه الصفحة قيد البناء."
+  "pageComingSoon": "هذه الصفحة قيد البناء.",
+  "nav": {
+    "about": "من نحن",
+    "challenge": "التحدي",
+    "solution": "الحل",
+    "impact": "الأثر",
+    "awards": "الجوائز",
+    "team": "الفريق",
+    "contact": "تواصل معنا"
+  },
+  "footer": {
+    "description": "نضيء الطريق إلى محتوى عربي متاح لكل قارئ.",
+    "explore": "استكشف",
+    "contact": "تواصل معنا",
+    "hours": "الأحد–الخميس، ٩ص–٥م",
+    "copyright": "© 2026 قبس — فريق قبس",
+    "rights": "جميع الحقوق محفوظة"
+  },
+  "onboarding": {
+    "eyebrow": "مرحباً بك في قبس",
+    "title": "كل نقطة قد تفتح عالماً",
+    "description": "تجربة عربية دافئة ومصممة للوصول. اختر تفضيلاتك وابدأ.",
+    "start": "لنبدأ",
+    "skip": "تخطي الآن"
+  }
 }

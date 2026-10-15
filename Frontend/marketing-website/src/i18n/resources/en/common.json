@@ -4,6 +4,35 @@
   "language": "العربية",
   "theme": "Theme",
   "liteMode": "Lite mode",
+  "toggleTheme": "Toggle theme",
+  "toggleLiteMode": "Toggle Lite mode",
+  "toggleMenu": "Open menu",
+  "switchLanguage": "Switch to Arabic",
+  "mainNavigation": "Main navigation",
   "home": "Home",
-  "pageComingSoon": "This page is being built."
+  "pageComingSoon": "This page is being built.",
+  "nav": {
+    "about": "About",
+    "challenge": "Challenge",
+    "solution": "Solution",
+    "impact": "Impact",
+    "awards": "Awards",
+    "team": "Team",
+    "contact": "Contact"
+  },
+  "footer": {
+    "description": "Lighting the way to accessible Arabic content for every reader.",
+    "explore": "Explore",
+    "contact": "Reach us",
+    "hours": "Sun–Thu, 9am–5pm",
+    "copyright": "© 2026 QABAS — QABAS Team",
+    "rights": "All rights reserved"
+  },
+  "onboarding": {
+    "eyebrow": "Welcome to QABAS",
+    "title": "Every dot can open a world",
+    "description": "A warm, Arabic-first experience designed for access. Choose your preferences and begin.",
+    "start": "Let’s begin",
+    "skip": "Skip for now"
+  }
 }

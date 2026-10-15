@@ -7,6 +7,7 @@ import {
   useParams,
 } from "react-router-dom";
 import i18n, { isLocale } from "@/i18n/config";
+import { Footer, Navbar, Onboarding, PageTransition } from "@/components/layout";
 
 const pageModules = {
   home: lazy(() => import("@/pages/home")),
@@ -51,7 +52,15 @@ function LocaleLayout() {
     return <Navigate to={`/ar${location.pathname}`} replace />;
   }
 
-  return <Outlet />;
+  return (
+    <>
+      <a className="sr-only focus:not-sr-only focus:fixed focus:start-4 focus:top-4 focus:z-50 focus:rounded-control focus:bg-surface focus:px-4 focus:py-3" href="#main-content">Skip to content</a>
+      <Navbar />
+      <PageTransition><div id="main-content"><Outlet /></div></PageTransition>
+      <Footer />
+      <Onboarding />
+    </>
+  );
 }
 
 export const router = createBrowserRouter([
