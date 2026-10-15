@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ar">
+  <head>
+    <!-- figma:head-start -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><!-- figma:title --></title>
+    <script>
+      try {
+        const raw = localStorage.getItem("qabas-site-config-v2");
+        const config = raw ? JSON.parse(raw) : null;
+        const root = document.documentElement;
+        if (config && config.version === 2) {
+          root.dataset.shape = config.theme.shape;
+          root.dataset.scale = config.theme.scaling;
+          root.dataset.surface = config.theme.surface;
+          root.dataset.solid = config.theme.solidStyle;
+          root.dataset.effect = config.theme.solidEffect;
+          root.dataset.transition = config.theme.transition;
+          root.dataset.mode = config.theme.mode;
+          root.lang = config.defaults.language;
+          root.dir = config.defaults.language === "ar" ? "rtl" : "ltr";
+        }
+      } catch {}
+    </script>
+    <!-- figma:head-end -->
+  </head>
+  <body>
+    <!-- figma:body-start -->
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <!-- figma:body-end -->
+  </body>
+</html>

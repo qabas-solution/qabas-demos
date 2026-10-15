@@ -1,0 +1,13 @@
+To Email: {{to_email}}
+Reply To: {{reply_to}}
+From Name: {{from_name}}
+Subject: [Qabas] {{subject}} — {{from_name}}
+
+From: {{from_name}}
+Reply to: {{reply_to}}
+Subject: {{subject}}
+Language: {{lang}}
+Page: {{page_url}}
+Sent at: {{sent_at}}
+
+{{message}}
