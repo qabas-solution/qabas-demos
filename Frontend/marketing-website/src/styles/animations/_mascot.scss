@@ -8,6 +8,33 @@
     transform-origin: center;
   }
 
+  #eye-left,
+  #eye-right,
+  #mouth {
+    fill: var(--q-ink);
+    stroke: var(--q-ink);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: .4375rem;
+  }
+
+  #cheeks {
+    fill: var(--q-pink);
+    opacity: .4;
+  }
+
+  #arm-left,
+  #arm-right {
+    fill: none;
+    stroke: var(--q-coral);
+    stroke-linecap: round;
+    stroke-width: 1.125rem;
+  }
+
+  #braille-dots {
+    fill: var(--q-gold);
+  }
+
   #body { animation: q-float 4s ease-in-out infinite; }
   #flame-tip { animation: q-flicker 3s ease-in-out infinite; transform-origin: 50% 100%; }
   #eye-left,

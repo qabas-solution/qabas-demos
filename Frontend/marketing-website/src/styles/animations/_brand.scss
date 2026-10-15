@@ -1,0 +1,120 @@
+@use "../abstracts/variables" as *;
+
+.q-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: .625rem;
+}
+
+.q-logo__mark {
+  position: relative;
+  display: inline-flex;
+  width: $brand-mark-width;
+  height: $brand-mark-height;
+  color: var(--q-amber);
+  filter: drop-shadow(0 .375rem .5rem rgb(110 44 139 / 15%));
+  animation: q-flicker 3s ease-in-out infinite;
+  transform-origin: 50% 100%;
+}
+
+.q-logo__mark svg {
+  width: 100%;
+  height: 100%;
+}
+
+.q-logo__spark {
+  position: absolute;
+  inset-block-start: -.125rem;
+  inset-inline-end: -.5625rem;
+  animation: q-twinkle 2s ease-in-out infinite;
+}
+
+.q-logo__copy {
+  display: flex;
+  flex-direction: column;
+  line-height: .85;
+}
+
+.q-logo__copy b {
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+  font-size: 1.6875rem;
+}
+
+.q-logo__copy small {
+  margin-block-start: .4375rem;
+  color: var(--q-purple);
+  font-family: "Montserrat", sans-serif;
+  font-size: .5rem;
+  font-weight: 700;
+  letter-spacing: .28em;
+  line-height: 1;
+}
+
+[data-theme="dark"] .q-logo__copy small {
+  color: var(--q-amber);
+}
+
+.q-braille-cell {
+  @include braille-dots;
+}
+
+.q-braille-cell i,
+.q-cell-loader i {
+  width: .325rem;
+  height: .325rem;
+  border-radius: 50%;
+  background: var(--q-gold);
+}
+
+.q-braille-cell i {
+  opacity: .25;
+}
+
+.q-braille-cell i.is-active {
+  opacity: 1;
+}
+
+.q-braille-cell--sm {
+  --q-braille-dot: .325rem;
+  gap: .2rem;
+}
+
+.q-braille-cell--md {
+  --q-braille-dot: .5rem;
+  grid-template-rows: repeat(3, var(--q-braille-dot));
+  gap: .3rem;
+}
+
+.q-braille-cell--md i {
+  width: var(--q-braille-dot);
+  height: var(--q-braille-dot);
+}
+
+.q-braille-cell--lg {
+  --q-braille-dot: .8125rem;
+  grid-template-rows: repeat(3, var(--q-braille-dot));
+  gap: .4375rem;
+}
+
+.q-braille-cell--lg i {
+  width: var(--q-braille-dot);
+  height: var(--q-braille-dot);
+}
+
+.q-cell-loader {
+  @include braille-dots(.875rem, .5rem);
+  grid-template-rows: repeat(3, .875rem);
+}
+
+.q-cell-loader i {
+  width: .875rem;
+  height: .875rem;
+  opacity: .3;
+  animation: q-dot-light 1.8s ease-in-out infinite;
+}
+
+@for $index from 1 through 6 {
+  .q-cell-loader i:nth-child(#{$index}) {
+    animation-delay: ($index - 1) * .15s;
+  }
+}
