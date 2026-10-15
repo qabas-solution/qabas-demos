@@ -39,6 +39,15 @@
     "valuesEyebrow": "Our values",
     "valuesTitle": "What guides every dot we place"
   },
+  "challengeContent": {
+    "eyebrow": "The challenge",
+    "heroTitle": "Knowledge is everywhere. Access is not.",
+    "heroDescription": "Arabic Braille readers face a real shortage of fast, trusted digital tools.",
+    "storyEyebrow": "Behind every number is a person",
+    "storyTitle": "Homework should not take the whole evening",
+    "storyDescription": "Every evening, Layan and her mother manually transcribe Braille worksheets. Her ability is not the barrier—the missing bridge to her classroom content is.",
+    "storyQuote": "We want more time for learning, and less time spent transcribing."
+  },
   "pageComingSoon": "This page is being built.",
   "nav": {
     "about": "About",

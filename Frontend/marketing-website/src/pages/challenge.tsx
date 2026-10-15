@@ -1,5 +1,5 @@
-import { PagePlaceholder } from "./page-placeholder";
+import { ChallengePageContent, getChallengeContent } from "@/features/challenge";
 
 export default function ChallengePage() {
-  return <PagePlaceholder page="challenge" />;
+  return <ChallengePageContent content={getChallengeContent()} />;
 }
