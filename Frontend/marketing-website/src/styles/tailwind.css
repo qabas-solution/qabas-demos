@@ -1,5 +1,5 @@
-@import 'tailwindcss';
-@import url("https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap");
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap");
 @custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
 
 @theme inline {
@@ -15,64 +15,13 @@
   --color-amber: var(--q-amber);
   --color-coral: var(--q-coral);
   --color-gold: var(--q-gold);
-  --radius-card: 20px;
-  --radius-hero: 32px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-}
-
-body section {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-}
-
-button {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  padding: 10px 20px;
-  background: transparent;
-  cursor: pointer;
-}
-
-section.content h1 {
-  font-size: 5rem;
-  font-family: "Bungee Outline", cursive;
-  line-height: 80px;
-
-  @media (max-width: 768px) {
-    font-size: 4rem;
-    line-height: 70px;
-  }
-}
-
-.bg-dark {
-  background: #0f1233;
-  color: #ffa31a;
-
-  button {
-    background: #0f1233;
-    color: #ffa31a;
-    border: 2px solid #ffa31a;
-  }
-}
-
-.bg-light {
-  background: #fffbf5;
-  color: #1e2b63;
-
-  button {
-    background: #fffbf5;
-    color: #1e2b63;
-    border: 2px solid #1e2b63;
-  }
+  --color-sky: var(--q-sky);
+  --color-pink: var(--q-pink);
+  --color-mint: var(--q-mint);
+  --color-lemon: var(--q-lemon);
+  --color-success: var(--q-success);
+  --color-error: var(--q-error);
+  --radius-control: var(--q-radius-control);
+  --radius-card: var(--q-radius-card);
+  --radius-section: var(--q-radius-section);
 }

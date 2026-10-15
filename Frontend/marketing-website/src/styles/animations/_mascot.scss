@@ -1,0 +1,36 @@
+@use "../abstracts/mixins" as *;
+
+.qabas-mascot {
+  overflow: visible;
+
+  * {
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+
+  #body { animation: q-float 4s ease-in-out infinite; }
+  #flame-tip { animation: q-flicker 3s ease-in-out infinite; transform-origin: 50% 100%; }
+  #eye-left,
+  #eye-right { animation: q-blink 4s infinite; }
+  #sparkle-1 { animation: q-twinkle 2.4s ease-in-out infinite; }
+  #sparkle-2 { animation: q-twinkle 2.4s ease-in-out .8s infinite; }
+  #sparkle-3 { animation: q-twinkle 2.4s ease-in-out 1.6s infinite; }
+}
+
+@keyframes q-blink {
+  0%, 94%, 100% { transform: scaleY(1); }
+  97% { transform: scaleY(.08); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .qabas-mascot * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+.lite-mode .qabas-mascot *,
+.lite-mode .q-cell-loader i {
+  animation: none !important;
+  transition: none !important;
+}

@@ -1,4 +1,8 @@
-@use 'abstracts/variables';
-@use 'abstracts/mixins';
-@use 'base/tokens';
-@use 'base/reset';
+@use "abstracts/variables";
+@use "abstracts/mixins";
+@use "abstracts/functions";
+@use "base/tokens";
+@use "base/reset";
+@use "base/typography";
+@use "animations/keyframes";
+@use "animations/mascot";

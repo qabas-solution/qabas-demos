@@ -1,4 +1,4 @@
-@use 'variables' as *;
+@use "variables" as *;
 
 @mixin respond($bp) {
   @media (min-width: $bp) {
@@ -7,8 +7,21 @@
 }
 
 @mixin dark {
-  [data-theme='dark'] & {
+  [data-theme="dark"] & {
     @content;
+  }
+}
+
+@mixin rtl {
+  [dir="rtl"] & {
+    @content;
+  }
+}
+
+@mixin focus-ring {
+  &:focus-visible {
+    outline: 3px solid var(--q-amber);
+    outline-offset: 3px;
   }
 }
 
@@ -18,9 +31,16 @@
   }
 }
 
-@mixin focus-ring {
-  &:focus-visible {
-    outline: 3px solid var(--q-amber);
-    outline-offset: 3px;
+@mixin braille-dots($size: 0.325rem, $gap: 0.2rem) {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(3, $size);
+  gap: $gap;
+  direction: ltr;
+}
+
+@mixin lite-mode {
+  :global(.lite-mode) & {
+    @content;
   }
 }

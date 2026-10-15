@@ -1,21 +1,9 @@
-import { useState } from "react";
-
 export default function App() {
-  const [isDark, setIsDark] = useState(false);
-
-  function handleClick() {
-    setIsDark((prevIsDark) => !prevIsDark);
-  }
-
   return (
-    <section className={isDark ? "bg-dark" : "bg-light"}>
-      <button onClick={handleClick}>
-        {isDark ? "Black Theme" : "White Theme"}
-      </button>
-      <section className="content">
-        <h1>
-          Welcome To A <br /> Spoon Project ...
-        </h1>
+    <section className="flex min-h-screen items-center justify-center bg-bg p-6 text-ink">
+      <section className="text-center">
+        <h1 className="text-4xl font-bold">QABAS</h1>
+        <p className="mt-4 text-ink-muted">Arabic Braille Solutions</p>
       </section>
     </section>
   );

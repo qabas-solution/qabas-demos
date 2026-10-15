@@ -1,0 +1,28 @@
+@use "../abstracts/variables" as *;
+
+:root {
+  font-family: $font-arabic-body;
+  font-size: 100%;
+  font-synthesis: none;
+  line-height: 1.7;
+  text-rendering: optimizeLegibility;
+}
+
+[dir="ltr"] {
+  font-family: $font-latin-body;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: $font-arabic-heading;
+  line-height: 1.12;
+}
+
+[dir="ltr"] :is(h1, h2, h3, h4, h5, h6) {
+  font-family: $font-latin-heading;
+}
