@@ -30,6 +30,15 @@
     "talkToUs": "تواصل معنا",
     "demoLabel": "تحويل نقاط برايل إلى حرف عربي"
   },
+  "aboutContent": {
+    "eyebrow": "من نحن",
+    "heroTitle": "بدأنا بسؤالٍ بسيط",
+    "heroDescription": "ماذا لو استطاعت التقنية أن تقرّب العربية من كل قارئ برايل؟ من هنا وُلد قبس.",
+    "storyEyebrow": "حكايتنا",
+    "storyTitle": "من فكرة جامعية إلى مشروع أثر",
+    "valuesEyebrow": "قيمنا",
+    "valuesTitle": "ما يوجّه كل نقطة نصنعها"
+  },
   "pageComingSoon": "هذه الصفحة قيد البناء.",
   "nav": {
     "about": "من نحن",

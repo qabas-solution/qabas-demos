@@ -1,0 +1,19 @@
+import { Link } from "react-router-dom";
+import { BrailleCell, Mascot, Sparkles } from "@/components/brand";
+import { Reveal } from "@/components/motion";
+import { Section } from "@/components/layout";
+import { useLocale } from "@/hooks/use-locale";
+import type { AboutContent } from "../types";
+
+interface AboutPageContentProps { content: AboutContent }
+
+export function AboutPageContent({ content }: AboutPageContentProps) {
+  const { locale, t } = useLocale();
+  return <main>
+    <section className="relative overflow-hidden"><div className="mx-auto grid max-w-6xl items-center gap-10 px-6 py-20 lg:min-h-[34rem] lg:grid-cols-[1.1fr_.9fr]"><div><p className="flex items-center gap-2 text-sm font-bold text-purple"><BrailleCell size="sm" />{t("aboutContent.eyebrow")}</p><h1 className="mt-5 max-w-2xl text-5xl font-extrabold tracking-tight sm:text-6xl">{t("aboutContent.heroTitle")}</h1><p className="mt-6 max-w-xl text-lg leading-9 text-ink-muted">{t("aboutContent.heroDescription")}</p></div><div className="relative grid min-h-64 place-items-center rounded-[45%_55%_50%_50%/55%_45%_55%_45%] bg-sky/20"><Mascot className="h-56 w-56" pose="hero" /><Sparkles className="absolute end-10 top-8 text-amber" /></div></div></section>
+    <Section className="pt-0"><div className="grid gap-5 md:grid-cols-2">{[content.mission, content.vision].map((item, index) => <Reveal className="rounded-section border border-line bg-surface p-7 shadow-sm md:p-10" key={item.title.en}><span className="text-5xl font-black text-ink/10">0{index + 1}</span><p className="mt-5 text-sm font-bold text-purple">{item.eyebrow[locale]}</p><h2 className="mt-3 text-3xl font-bold">{item.title[locale]}</h2><p className="mt-4 leading-8 text-ink-muted">{item.description[locale]}</p></Reveal>)}</div></Section>
+    <Section><div className="mb-10 max-w-2xl"><p className="text-sm font-bold text-purple">{t("aboutContent.storyEyebrow")}</p><h2 className="mt-3 text-4xl font-bold">{t("aboutContent.storyTitle")}</h2></div><div className="grid gap-0 md:grid-cols-4">{content.timeline.map((item, index) => <Reveal className="relative border-s-2 border-line pb-10 ps-7 md:border-s-0 md:border-t-2 md:pb-0 md:pe-5 md:ps-0 md:pt-7" key={item.year}><i className="absolute -start-[7px] top-0 size-3 rounded-full bg-amber md:-top-[7px] md:start-0" /><strong className="text-2xl text-purple">{item.year}</strong><h3 className="mt-3 text-lg font-bold">{item.title[locale]}</h3><p className="mt-3 text-sm leading-7 text-ink-muted">{item.description[locale]}</p></Reveal>)}</div></Section>
+    <Section className="pt-0"><div className="mb-10 max-w-2xl"><p className="text-sm font-bold text-purple">{t("aboutContent.valuesEyebrow")}</p><h2 className="mt-3 text-4xl font-bold">{t("aboutContent.valuesTitle")}</h2></div><div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">{content.values.map((value) => <Reveal className={`rounded-section p-7 ${["bg-sky/25", "bg-pink/25", "bg-mint/25", "bg-lemon/25"][content.values.indexOf(value)]}`} key={value.title.en}><Sparkles className="text-purple" /><h3 className="mt-7 text-2xl font-bold">{value.title[locale]}</h3><p className="mt-3 text-sm leading-7 text-ink-muted">{value.description[locale]}</p></Reveal>)}</div></Section>
+    <Section className="pt-0"><div className="grid items-center gap-8 rounded-section bg-surface-soft p-8 md:grid-cols-[.7fr_1.3fr] md:p-12"><Mascot className="mx-auto h-44 w-44" pose="success" /><div><p className="text-sm font-bold text-purple">{t("homeContent.beginTogether")}</p><h2 className="mt-3 text-4xl font-bold">{t("homeContent.everyDot")}</h2><p className="mt-4 text-ink-muted">{t("homeContent.joinUs")}</p><Link to={`/${locale}/contact`} className="mt-6 inline-flex min-h-12 items-center rounded-control bg-primary px-6 font-bold text-white">{t("homeContent.talkToUs")}</Link></div></div></Section>
+  </main>;
+}

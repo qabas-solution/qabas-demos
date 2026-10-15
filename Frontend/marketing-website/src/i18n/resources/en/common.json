@@ -30,6 +30,15 @@
     "talkToUs": "Talk to us",
     "demoLabel": "Braille dots transforming into an Arabic letter"
   },
+  "aboutContent": {
+    "eyebrow": "About QABAS",
+    "heroTitle": "It started with one simple question",
+    "heroDescription": "What if technology could bring Arabic closer to every Braille reader? That question became QABAS.",
+    "storyEyebrow": "Our story",
+    "storyTitle": "From a university idea to an impact venture",
+    "valuesEyebrow": "Our values",
+    "valuesTitle": "What guides every dot we place"
+  },
   "pageComingSoon": "This page is being built.",
   "nav": {
     "about": "About",

@@ -1,5 +1,6 @@
-import { PagePlaceholder } from "./page-placeholder";
+import { AboutPageContent } from "@/features/about";
+import { getAboutContent } from "@/features/about";
 
 export default function AboutPage() {
-  return <PagePlaceholder page="about" />;
+  return <AboutPageContent content={getAboutContent()} />;
 }
